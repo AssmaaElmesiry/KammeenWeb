@@ -2,16 +2,67 @@
     <section class="bg-SectionBg pt-24 pb-36">
         <div class="container mx-auto sm:px-6 px-4 ">
             <TitleVue>آلية العمل</TitleVue>
-        </div>
+        
         <div class="inner relative">
-            <div class="container mx-auto sm:px-6 px-4 flex justify-between">
-                <div class="item w-36 h-36 bg-white border border-solid border-thirdColor absolute bottom-1/4 right-1/4">gfgfgf</div>
-                <div class="item w-36 h-36 bg-white border border-solid border-thirdColor">gggg</div>
-                <div class="item w-36 h-36 bg-white border border-solid border-thirdColor">ggg</div>
-                <div class="item w-36 h-36 bg-white border border-solid border-thirdColor">ggg</div>
+            <div class="relative road">
+                <img src="../assets/road.png"/>
+            </div>
+            <div class="absolute top-0 w-full">
+                <div  class="flex all mask1">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="item item1 w-24 h-24 bg-white border-4 rounded-full border-solid border-thirdColor flex justify-center items-center">
+                            <img src="../assets/car.svg"/>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h2 class="text-thirdColor">نص تجريبى</h2>
+                        <p class="text-sm">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
+                        </p>
+                    </div>
+                </div>
+                <div  class="flex all mask2">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="item item2 w-24 h-24 bg-white border-4 rounded-full border-solid border-thirdColor flex justify-center items-center">
+                            <img src="../assets/car.svg"/>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h2 class="text-thirdColor">نص تجريبى</h2>
+                        <p class="text-sm">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
+                        </p>
+                    </div>
+                </div>
+                <div class="flex all mask3">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="item item3 w-24 h-24 bg-white border-4 rounded-full border-solid border-thirdColor flex justify-center items-center">
+                            <img src="../assets/car.svg"/>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h2 class="text-thirdColor">نص تجريبى</h2>
+                        <p class="text-sm">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
+                        </p>
+                    </div>
+                </div>
+                <div  class="flex all mask4">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="item item4 w-24 h-24 bg-white border-4 rounded-full border-solid border-thirdColor flex justify-center items-center">
+                            <img src="../assets/car.svg"/>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h2 class="text-thirdColor">نص تجريبى</h2>
+                        <p class="text-sm">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        
+        </div>
     </section>
 </template>
 <script>
@@ -23,29 +74,162 @@ components:{
 }
 </script>
 <style scoped>
-.inner{
-    background-image: url(../assets/road.png);
-    height: 1225px;
-    background-repeat: no-repeat;
+
+.inner .item img{
+    width: 60%;
 }
-.inner .item::before{
-    content: "";
-    bottom: 100%;
-    height: 205px;
-    width: 2px;
-    position: absolute;
-    background-color: red;
-    right: 50%;
-    transform: translate(-50%);
+.inner .circle{
+    width: 30px;
+    height: 30px;
+    background-color: #FFAE53;
+    border-radius: 100%;
+    border: 2px solid #fff;
 }
-.inner .item::after{
-    content: "";
-    bottom: 100%;
-    height: 50px;
-    width: 50px;
+.inner .line{
+    height: 150px;
+    width: 5px;
+    background-color: #FFAE53;
+}
+.inner .mask1{
+    margin-right: 7%;
+    padding-top: 6%;
+}
+.inner .mask2{
+    flex-direction: row-reverse;
+    margin-left: 7%;
+    padding-top: 8%;
+}
+.inner .mask3{
+    margin-right: 7%;
+    padding-top: 9%;
+}
+.inner .mask4{
+    flex-direction: row-reverse;
+    margin-left: 7%;
+    padding-top: 8%;
+}
+.inner .all:nth-child(2n+1) .desc{
+    width: 333px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.inner .all:nth-child(2n+1) .desc::before{
     position: absolute;
-    background-color: blue;
-    border: 1px solid #fff;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
+.inner .all:nth-child(2n) .desc{
+    width: 333px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.inner .all:nth-child(2n) .desc::before{
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+}
+@media(max-width: 1200px){
+    .inner .mask1{
+        margin-right: 7%;
+        padding-top: 4%;
+    }
+    .inner .mask2{
+        flex-direction: row-reverse;
+        margin-left: 7%;
+        padding-top: 3%;
+    }
+    .inner .mask3{
+        margin-right: 7%;
+        padding-top: 3%;
+    }
+    .inner .mask4{
+        flex-direction: row-reverse;
+        margin-left: 7%;
+        padding-top: 3%;
+    }
+}
+@media(max-width: 991px){
+    .inner .road{
+        display: none;
+    }
+    .inner div{
+        position: relative;
+    }
+}
+@media(max-width: 540px){
+.inner .mask1,.inner .mask2,.inner .mask3,.inner .mask4{
+    margin: 0;
+}
+.inner .all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner .all:nth-child(2n+1) .desc{
+    width: 333px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    padding: 10px;
+    margin-right: 0;
+    margin-top: 15px;
+}
+
+.inner .all:nth-child(2n+1) .desc::before{
+    position: absolute;
     right: 50%;
+    top: -20px;
+    transform: translatex(50%);
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+.inner .all:nth-child(2n) .desc{
+    width: 333px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    padding: 10px;
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.inner .all:nth-child(2n) .desc::before{
+    position: absolute;
+    right: 50%;
+    top: -20px;
+    transform: translatex(50%);
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
 }
 </style>
