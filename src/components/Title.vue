@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center mb-8">
-        <h2 class="relative p-4 text-mainColor text-5xl font-bold"><slot></slot></h2>
+        <h2 class="relative p-4  text-5xl font-bold"><slot></slot></h2>
     </div>
 </template>
 <style scoped>

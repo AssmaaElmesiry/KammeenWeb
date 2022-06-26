@@ -5,6 +5,7 @@ module.exports = {
         extend: {
             maxWidth: {
                 'dropdownWidth': '250px',
+
             },
             colors: {
                 'mainColor': "#2E2851",
@@ -17,6 +18,15 @@ module.exports = {
                 '999': '999',
                 '9999': '9999',
                 '99999': '99999',
+            },
+            width: {
+                'mainImg': '90%',
+            },
+            inset: {
+                'topMainImg': '14px'
+            },
+            spacing: {
+                'mFooterT': '80%'
             }
         },
     },

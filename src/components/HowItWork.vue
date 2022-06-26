@@ -1,7 +1,7 @@
 <template>
     <section class="bg-SectionBg pt-24 pb-36">
         <div class="container mx-auto sm:px-6 px-4 ">
-            <TitleVue>آلية العمل</TitleVue>
+            <TitleVue class="text-mainColor">آلية العمل</TitleVue>
         
         <div class="inner relative">
             <div class="relative road">
@@ -16,7 +16,7 @@
                     </div>
                     <div class="desc">
                         <h2 class="text-thirdColor">نص تجريبى</h2>
-                        <p class="text-sm">
+                        <p class="text-sm text-justify">
                             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
                         </p>
                     </div>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="desc">
                         <h2 class="text-thirdColor">نص تجريبى</h2>
-                        <p class="text-sm">
+                        <p class="text-sm text-justify">
                             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
                         </p>
                     </div>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="desc">
                         <h2 class="text-thirdColor">نص تجريبى</h2>
-                        <p class="text-sm">
+                        <p class="text-sm text-justify">
                             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
                         </p>
                     </div>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="desc">
                         <h2 class="text-thirdColor">نص تجريبى</h2>
-                        <p class="text-sm">
+                        <p class="text-sm text-justify">
                                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
                         </p>
                     </div>
@@ -151,26 +151,35 @@ components:{
     border-right: 10px solid #fff;
 }
 @media(max-width: 1200px){
+    .inner .all:nth-child(2n+1) .desc,
+    .inner .all:nth-child(2n) .desc{
+        padding: 5px;
+    }
     .inner .mask1{
         margin-right: 7%;
-        padding-top: 4%;
+        padding-top: 5%;
     }
     .inner .mask2{
         flex-direction: row-reverse;
         margin-left: 7%;
-        padding-top: 3%;
+        padding-top: 7%;
     }
     .inner .mask3{
         margin-right: 7%;
-        padding-top: 3%;
+        padding-top: 6%;
     }
     .inner .mask4{
         flex-direction: row-reverse;
         margin-left: 7%;
-        padding-top: 3%;
+        padding-top: 6%;
     }
+
 }
 @media(max-width: 991px){
+    .inner .all:nth-child(2n+1) .desc,
+    .inner .all:nth-child(2n) .desc{
+        padding: 10px;
+    }
     .inner .road{
         display: none;
     }
