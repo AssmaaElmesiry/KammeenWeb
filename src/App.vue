@@ -33,6 +33,7 @@ export default{
 <style>
 #app {
   font-family:"Tajawal";
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

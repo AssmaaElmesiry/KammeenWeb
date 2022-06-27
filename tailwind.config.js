@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         extend: {
             maxWidth: {
-                'dropdownWidth': '250px',
+                'dropdownWidth': '300px',
 
             },
             colors: {
@@ -26,7 +26,10 @@ module.exports = {
                 'topMainImg': '14px'
             },
             spacing: {
-                'mFooterT': '80%'
+                'mFooterT': '95%'
+            },
+            gridTemplateColumns: {
+                'footerGrid': 'repeat(auto-fill, minmax(260px,1fr))'
             }
         },
     },

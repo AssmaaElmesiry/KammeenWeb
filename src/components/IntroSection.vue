@@ -14,8 +14,8 @@
         </div>
       </div>
       <div class="lg:w-1/2 w-full text-start font-bold flex flex-col justify-center">
-        <h2 class="text-white text-4xl mb-5">{{title}}</h2>
-        <p class="text-white text-justify text-xl leading-10">{{description}}</p>
+        <h2 class="text-white sm:text-4xl text-3xl mb-5">{{title}}</h2>
+        <p class="text-white text-justify sm:text-xl text-base leading-10">{{description}}</p>
       </div>
     </div>
   </section>

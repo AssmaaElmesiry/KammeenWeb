@@ -13,20 +13,20 @@
                     <li class="ml-16"> <a class="text-white text-xl relative transition ease-in duration-300" href="#connectme">التحميل </a></li>
                     <li class=""> <a class="text-white text-xl relative transition ease-in duration-300" href="#connectme">اتصل بنا </a></li>
                 </ul>
-                <div class="icon"  @click="toggleMobileNav">
+                <div class="icon" @click="toggleMobileNav">
                     <fa icon="bars" v-show="mobile" :class="{'icon-active': mobileNav}" />
                 </div>
                 <transition name="mobile-nav">
-                    <ul v-show="mobileNav" class="flex flex-col fixed w-1/2 h-full bg-bgHeader top-0 right-0 p-6 text-center max-w-dropdownWidth">
+                    <ul v-show="mobileNav" class="flex flex-col fixed w-3/4 h-full bg-mainColor top-0 right-0 p-6 text-center max-w-dropdownWidth">
                         <div class="flex justify-center mb-10">
                             <img src="../assets/logo.png" class="w-1/3"/>
                         </div>
-                            <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300" href="/">الرئيسية</a></li>
-                            <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300" href="#aboutme">عن التطبيق </a> </li>
-                            <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300" href="#service">خدمات التطبيق</a> </li>
-                            <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300" href="#portfolio">كيف يعمل التطبيق</a></li>
-                            <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300" href="#connectme">التحميل </a></li>
-                            <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300" href="#connectme">اتصل بنا </a></li>
+                        <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300 hover:text-secondColor" href="/">الرئيسية</a></li>
+                        <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300 hover:text-secondColor" href="#aboutme">عن التطبيق </a> </li>
+                        <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300 hover:text-secondColor" href="#service">خدمات التطبيق</a> </li>
+                        <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300 hover:text-secondColor" href="#portfolio">كيف يعمل التطبيق</a></li>
+                        <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300 hover:text-secondColor" href="#connectme">التحميل </a></li>
+                        <li class="ml-0 py-4 px-0"> <a class="text-white font-bold transition ease-in duration-300 hover:text-secondColor" href="#connectme">اتصل بنا </a></li>
                     </ul>
                 </transition>
             </nav>
@@ -111,7 +111,7 @@ a.router-link-exact-active {
 }
 .mobile-nav-enter-from,
 .mobile-nav-leave-to{
-    transform: translateX(250px);
+    transform: translateX(300px);
 }
 .mobile-nav-enter-to{
     transform: translateX(0);
